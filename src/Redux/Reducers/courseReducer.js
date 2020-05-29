@@ -1,7 +1,8 @@
+import * as types from "../Actions/actionTypes";
+
 export default function courseReducer(state = [], action) {
   switch (action.type) {
-    case "CREATE_COURSE":
-      debugger;
+    case types.CREATE_COURSE:
       return [...state, { ...action.course }];
     default:
       return state;
