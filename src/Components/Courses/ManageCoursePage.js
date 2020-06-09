@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { loadCourses } from "../../Redux/Actions/courseActions";
 import { loadAuthors } from "../../Redux/Actions/authorActions";
 import PropTypes from "prop-types";
 
-class ManageCoursePage extends React.Component {
-  componentDidMount() {
-    const { courses, authors, loadAuthors, loadCourses } = this.props;
+function ManageCoursePage({ courses, authors, loadAuthors, loadCourses }) {
+  useEffect(() => {
     if (courses.length === 0) {
       loadCourses().catch((error) => {
         alert("Loading courses failed" + error);
@@ -18,15 +17,14 @@ class ManageCoursePage extends React.Component {
         alert("Loading authors failed" + error);
       });
     }
-  }
+  }, []);
+  // The ^ Empty Array above as a second argument to effect means the effect will run once when the component mounts, rather than every time. NOTE --- This is all effectively the same as componentDidMount as it starts with an empty array then loads what's needed
 
-  render() {
-    return (
-      <>
-        <h2>Manage Courses</h2>
-      </>
-    );
-  }
+  return (
+    <>
+      <h2>Manage Courses</h2>
+    </>
+  );
 }
 
 ManageCoursePage.propTypes = {
