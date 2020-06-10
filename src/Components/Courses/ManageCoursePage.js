@@ -18,7 +18,6 @@ function ManageCoursePage({ courses, authors, loadAuthors, loadCourses }) {
       });
     }
   }, []);
-  // The ^ Empty Array above as a second argument to effect means the effect will run once when the component mounts, rather than every time. NOTE --- This is all effectively the same as componentDidMount as it starts with an empty array then loads what's needed
 
   return (
     <>
