@@ -14,6 +14,7 @@ function ManageCoursePage({
   ...props
 }) {
   const [course, setCourse] = useState({ ...props.course });
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     if (courses.length === 0) {
@@ -29,11 +30,7 @@ function ManageCoursePage({
     }
   }, []);
 
-  return (
-    <>
-      <h2>Manage Courses</h2>
-    </>
-  );
+  return <CourseForm course={course} errors={errors} authors={authors} />;
 }
 
 ManageCoursePage.propTypes = {
