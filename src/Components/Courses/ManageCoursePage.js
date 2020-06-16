@@ -26,9 +26,6 @@ function ManageCoursePage({
     } else {
       setCourse({ ...props.course });
     }
-
-    // IF we do have courses available we would like to set our state to the course passed in on props
-    // This will copy the course passed in on props to state anytime a new course is passed in
     if (authors.length === 0) {
       loadAuthors().catch((error) => {
         alert("Loading authors failed" + error);
