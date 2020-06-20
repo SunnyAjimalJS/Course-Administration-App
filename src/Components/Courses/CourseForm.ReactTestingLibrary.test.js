@@ -17,3 +17,8 @@ function renderCourseForm(args) {
   const props = { ...defaultProps, ...args };
   return render(<CourseForm {...props} />);
 }
+
+it("should render Add Course header", () => {
+  const { getByText } = renderCourseForm();
+  getByText("Add Course");
+});
