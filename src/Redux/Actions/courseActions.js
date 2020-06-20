@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import * as types from "./actionTypes";
 import * as courseApi from "../../api/courseApi";
 import { beginApiCall, apiCallError } from "./apiStatusActions";

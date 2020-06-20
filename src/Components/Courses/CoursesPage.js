@@ -8,7 +8,6 @@ import CourseList from "../Courses/CourseList";
 import { Redirect } from "react-router-dom";
 import Spinner from "../Common/Spinner";
 import { toast } from "react-toastify";
-import { deleteCourse } from "../../api/courseApi";
 
 class CoursesPage extends React.Component {
   state = {
