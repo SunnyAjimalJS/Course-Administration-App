@@ -1,5 +1,4 @@
 /* eslint-disable import/no-named-as-default */
-//THIS APP IS FOR ADMINISTERING COURSE DATA ON PLURALSIGHT. E.G. FOR PLURALSIGHT EMPLOYEES THAT MANAGE COURSE DATA
 
 import React from "react";
 import { Route, Switch } from "react-router-dom";
