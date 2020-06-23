@@ -30,4 +30,4 @@ $ npm run start
 
 > Once this is complete, you will see `Project is running at http://localhost:3000`. Click on the link to open up in your browser: 
 
-![RECORDITGIF](http://g.recordit.co/zX4b3eEwyP.gif)
+![RECORDITGIF](http://g.recordit.co/oIDFayEyLY.gif)
