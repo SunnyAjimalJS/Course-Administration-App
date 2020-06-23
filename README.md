@@ -1,5 +1,5 @@
 # Course-Administration-App
-> This App is for administering Course data with data from Pluralsight
+> This App is for administering Online Courses with data from Pluralsight
 
 **Features**
 - Add a new Course
