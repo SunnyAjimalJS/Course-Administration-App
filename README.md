@@ -8,6 +8,10 @@
 - View the author for the Online Course along with the Category for this Course Subject
 - Delete an existing Course
 
+## Here's a Video Demo of how the App works: 
+
+![RECORDITGIF](https://recordit.co/H5ABYFSGYU)
+
 ## Installation
 
 ### Clone the Repository
