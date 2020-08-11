@@ -10,7 +10,7 @@
 
 ## Here's a Video Demo of how the App works: 
 
-![RECORDITGIF](https://recordit.co/H5ABYFSGYU)
+![RECORDITGIF](http://g.recordit.co/7ElWn93ME6.gif)
 
 ## Installation
 
